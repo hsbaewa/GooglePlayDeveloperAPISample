@@ -1,1 +1,13 @@
 # GooglePlayDeveloperAPISample
+
+비공개 키(p12 또는 json) 파일이 필요합니다.
+<생성 방법>
+1. https://play.google.com/apps/publish/?hl=ko 에 접속
+2. 좌측 메뉴중 "설정" 진입
+3. "API 액세스" 메뉴로 진입
+4. "서비스 계정" 항목에서 "서비스 계정 만들기" 버튼 클릭
+5. "서비스 계정 만들기" 관련 생성 설명이 나올텐데 한번 읽어보고 설명에 나와 있는 "Google API 콘솔"을 클릭하여 진입함
+(https://console.developers.google.com/iam-admin/serviceaccounts/project?project=???)
+6. 상단에 "서비스 계정 만들기" 링크를 클릭
+7. 서비스 계정 이름 및 역할을 설정하고 "새 비공개 키 제공" 에 체크박스에 체크하고 키 유형을 선택 후 만들기를 클릭(필자는 P12 를 선택함.)
+8. 만들어진 이 키 파일을 assets폴더에 넣고 AndroidPublisherHelper 클래스 내용을 참고하여 키 파일명을 수정한다.
